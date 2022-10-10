@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: gray;
+            background-color: #666;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            border: 2px solid #666;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            background-color: mediumaquamarine;
+            box-shadow: 0 0 0 2px white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button:hover {
+            box-shadow: 0 0 0 2px white, inset 0 0 6px 1px #d5d5d5;
+        }
+
+        .button i {
+            transform: rotateX(0);
+            transition: transform .3s linear;
+        }
+
+        .button:hover i {
+            transform: rotateX(180deg);
+            transition: transform .3s linear;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="button">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+</html>
