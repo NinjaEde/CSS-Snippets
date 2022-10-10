@@ -13,19 +13,29 @@
     <style>
         body {
             background-color: #666;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-size: 1.2em;
             height: 100vh;
+        }
+
+        p {
+            color: #fff;
+            font-variant: small-caps;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1;
         }
 
         .button {
             border: 2px solid #666;
             width: 44px;
             height: 44px;
-            display: flex;
             background-color: mediumaquamarine;
             box-shadow: 0 0 0 2px white;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -34,24 +44,41 @@
             box-shadow: 0 0 0 2px white, inset 0 0 6px 1px #d5d5d5;
         }
 
-        .button i {
+        .button.flip i {
             transform: rotateX(0);
             transition: transform .3s linear;
         }
 
-        .button:hover i {
+        .button.flip:hover i {
             transform: rotateX(180deg);
+            transition: transform .3s linear;
+        }
+
+        .button.rotate i {
+            transform: rotate(0);
+            transition: transform .3s linear;
+        }
+
+        .button.button.rotate:hover i {
+            transform: rotate(-180deg);
             transition: transform .3s linear;
         }
     </style>
 
 </head>
 
-<body>
-    <div class="button">
-        <i class="fa-solid fa-chevron-up"></i>
-    </div>
+<body class="flex-center">
+    <div class="flex-center container">
+        <p>Flip:</p>
+        <div class="button flip">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
 
+        <p>Rotate:</p>
+        <div class="button rotate">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+    </div>
 </body>
 
 </html>
