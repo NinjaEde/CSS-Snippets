@@ -15,10 +15,11 @@
             background-color: #666;
             font-size: 1.2em;
             height: 100vh;
+            background: linear-gradient(120deg, #4b6cb7 0%, #182848 100%);
         }
 
         p {
-            color: #fff;
+            color: rgba(255, 255, 255, 0.6);
             font-variant: small-caps;
         }
 
@@ -33,15 +34,21 @@
             border: 2px solid #666;
             width: 44px;
             height: 44px;
-            background-color: mediumaquamarine;
-            box-shadow: 0 0 0 2px white;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: rgba(37, 24, 24, 0.7);
+            background: rgba(200, 197, 232, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
         }
 
         .button:hover {
-            box-shadow: 0 0 0 2px white, inset 0 0 6px 1px #d5d5d5;
+            color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25), inset 0 0 2px 1px rgba(255, 255, 255, 0.5);
         }
 
         .button.flip i {
