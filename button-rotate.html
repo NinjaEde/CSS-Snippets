@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-color: #666;
+            font-family: 'Roboto', sans-serif;
             font-size: 1.2em;
             height: 100vh;
             background: linear-gradient(120deg, #4b6cb7 0%, #182848 100%);
@@ -27,7 +30,6 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex: 1;
         }
 
         .button {
@@ -74,7 +76,8 @@
 
 </head>
 
-<body class="flex-center">
+<body>
+    <h1 class="flex-center">Display transition <code>transform: rotate()</code></h1>
     <div class="flex-center container">
         <p>Flip:</p>
         <div class="button flip">
